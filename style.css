@@ -1,0 +1,228 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background-color: #eaf2ff;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 42px;
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.hero-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    color: #0d6efd;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 70px 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #1e3a5f;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+
+/* =========================
+   SKILL CARDS
+========================= */
+
+.skill-card {
+    height: 100%;
+    text-align: center;
+
+    border: none;
+
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.project-card {
+    height: 100%;
+    border: none;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#contactForm {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+#successMessage {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .section-title {
+    color: #8ec5ff;
+}
+
+body.dark-mode .hero-section {
+    background-color: #292929;
+}
+
+body.dark-mode .card {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .table {
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Mobile-first design is used above */
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .hero-section {
+        padding: 100px 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+    section {
+        padding: 90px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 55px;
+    }
+
+}
